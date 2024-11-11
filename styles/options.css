@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between; /* Organiza as opções nas extremidades */
+    width: 80%; /* Limita a largura do container */
+    margin-top: 50px;
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#volumePercentage {
+    font-size: 1.2em;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+/* Estilizando o combobox */
+select {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Alterando a cor do fundo e a borda ao passar o mouse */
+select:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+/* Mudando a cor de fundo quando o select estiver em foco */
+select:focus {
+    outline: none;
+    background-color: #666;
+    border-color: #ddd;
+}
+
+/* Estilizando as opções dentro do select */
+select option {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Mudando a cor de fundo da opção quando está selecionada */
+select option:checked {
+    background-color: #444;
+    color: #fff;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-right: 10px;
+    background-color: #444;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+input[type="range"]:hover {
+    background-color: #555;
+}
+
+input[type="text"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #555;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px; /* Coloca o botão no canto inferior */
+    right: 20px;  /* Ajuste para a posição desejada */
+}
+
+button:hover {
+    background-color: #e5c100;
+}
+
+button:active {
+    background-color: #b39b00;
+}

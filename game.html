@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - RITMAO POGGERS</title>
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+    <div id="score">Pontuação: 0</div>
+    <div id="precisao">Precisão: 100%</div>
+    <div id="countdown">3</div>
+    <div id="game">
+        <div id="line"></div>
+        <div class="divider" style="left: 25%;"></div>
+        <div class="divider" style="left: 50%;"></div>
+        <div class="divider" style="left: 75%;"></div>
+    </div>
+    <div id="combo">Combo: 0</div>    
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="performanceScreen" class="hidden">
+        <h2>Desempenho</h2>
+        <p id="finalScore">Pontuação: 0</p>
+        <p id="finalPrecision">Precisão: 0%</p>
+        <p id="maxCombo">Combo máximo: 0</p>
+        <p id="hiddenModeStatus">Hidden mode: Desativado</p>
+        <button onclick="location.reload()">Rejogar</button>
+        <button onclick="window.location.href='index.html'">Voltar ao Início</button>
+        <button onclick="window.location.href='choose_music.html'">Escolher Nova Música</button>
+    </div>
+    <script src="scripts/game.js"></script>
+</body>
+</html>

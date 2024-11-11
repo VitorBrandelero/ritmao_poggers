@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <h1>Opções</h1>
+    
+    <div class="options-container">
+        <div class="option-group">
+            <label for="volumeControl">Volume:</label>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+            <span id="volumePercentage">50%</span>
+            <br><br>
+            <label>
+                <input type="checkbox" id="hiddenModeToggle">
+                Ativar Hidden Mode
+            </label>
+        </div>
+        <div class="option-group">
+            <div>
+                <label for="noteColor">Cor das notas: </label>
+                <select id="noteColor">
+                    <option value="#0000FF">Azul</option>
+                    <option value="#FF0000">Vermelho</option>
+                    <option value="#32CD32">Verde</option>
+                    <option value="#FFFF00">Amarelo</option>
+                    <option value="#800080">Roxo</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="lineColor">Cor da linha de acerto: </label>
+                <select id="lineColor">
+                    <option value="#32cd32">Verde</option>
+                    <option value="#800080">Roxo</option>
+                    <option value="#FFD700">Ouro</option>
+                    <option value="#00BFFF">Azul Claro</option>
+                    <option value="#FF4500">Laranja Escuro</option>
+                </select>
+            </div>
+            <br> 
+            <div>
+                <label for="scoreColor">Cor da pontuação: </label>
+                <select id="scoreColor">
+                    <option value="#FFD700">Ouro</option>
+                    <option value="#FFFFFF">Branco</option>
+                    <option value="#00FF00">Verde Limão</option>
+                    <option value="#800080">Roxo</option>
+                    <option value="#8A2BE2">Azul Violeta</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="comboColor">Cor do combo: </label>
+                <select id="comboColor">
+                    <option value="#FFD700">Ouro</option>
+                    <option value="#FF4500">Laranja Escuro</option>
+                    <option value="#32CD32">Verde</option>
+                    <option value="#FF1493">Rosa</option>
+                    <option value="#1E90FF">Azul</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="accuracyColor">Cor da precisão: </label>
+                <select id="accuracyColor">
+                    <option value="#32CD32">Verde</option>
+                    <option value="#FFFF00">Amarelo</option>
+                    <option value="#FF0000">Vermelho</option>
+                    <option value="#00BFFF">Azul Claro</option>
+                    <option value="#800080">Roxo</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <button id="saveButton">Salvar</button>
+
+    <script src="scripts/options.js"></script>
+</body>
+</html>

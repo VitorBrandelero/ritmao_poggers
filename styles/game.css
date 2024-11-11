@@ -1,0 +1,163 @@
+:root {
+    --note-color: #0000FF;
+    --hit-line-color: #32CD32;
+    --score-color: #FFD700;
+    --combo-color: #FFD700;
+    --accuracy-color: #32CD32;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: var(--score-color);
+    font-weight: bold;
+}
+
+#precisao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: var(--accuracy-color);
+    font-weight: bold;
+}
+
+#countdown {
+    position: absolute;
+    top: 20px;
+    left: calc(50% + 200px);
+    font-size: 28px;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+#game {
+    position: relative;
+    width: 300px;
+    height: 700px;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.note {
+    position: absolute;
+    bottom: 100%;
+    width: 50px;
+    height: 35px;
+    background-color: var(--note-color);
+    border-radius: 5px;
+    transition: bottom 1s; 
+}
+
+.note.hidden-mode {
+    animation: fadeOut var(--animation-duration) linear forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    40% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.note[data-key="D"] { left: 5%; }
+.note[data-key="F"] { left: 35%; }
+.note[data-key="J"] { left: 55%; }
+.note[data-key="K"] { left: 85%; }
+
+#line {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--hit-line-color);
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#progress-bar-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #32cd32;
+    border-radius: 10px;
+}
+
+#combo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--combo-color);
+}
+
+.hidden {
+    display: none;
+}
+
+#performanceScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+#performanceScreen button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#performanceScreen button:hover {
+    background-color: #666;
+}
