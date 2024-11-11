@@ -1,23 +1,73 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #222;
-    color: #ddd;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h1 {
-    color: #ffd700;
-    font-size: 2em;
+#helpContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #32cd32;
+}
+
+section {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.1em;
-    line-height: 1.5;
-    max-width: 600px;
-    text-align: center;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#credits {
+    margin-top: 20px;
+}
+
+.creditItem {
+    background-color: #333;
+    padding: 15px;
     margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.creditItem h3 {
+    color: #32cd32;
+    margin: 0 0 10px;
+}
+
+.creditItem p {
+    margin: 5px 0;
+}
+
+.creditItem a {
+    color: #32cd32;
+    text-decoration: none;
+}
+
+.creditItem a:hover {
+    text-decoration: underline;
 }
